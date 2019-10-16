@@ -28,6 +28,17 @@ npm install -g gatsby-cli  --registry=https://registry.npm.taobao.org
 
 ## 项目初始化
 
+### 使用gatsby-cli 初始化项目
+
 ```shell
 SHARP_DIST_BASE_URL=https://npm.taobao.org/mirrors/sharp-libvips/v8.8.1/ gatsby new gatsby-workshop-jsconf-cn https://github.com/violin-wang/gatsby-workshop-jsconf-cn-starter
+```
+
+项目正确初始化后会在运行命令的目录生成一个`gatsby-workshop-jsconf-cn`的文件夹，后续workshop中的内容将基于这个文件夹展开。
+
+### 测试项目初始化
+
+```shell
+cd gatsby-workshop-jsconf-cn
+npm start
 ```
