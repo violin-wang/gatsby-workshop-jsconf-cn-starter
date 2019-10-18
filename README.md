@@ -43,6 +43,45 @@ cd gatsby-workshop-jsconf-cn
 npm start
 ```
 
+## 使用docker进行开发
+
+推荐使用国内docker镜像加速器，加速镜像拉取，节省等待时间。
+
+### clone项目到本地
+
+```shell
+git clone git@github.com:violin-wang/gatsby-workshop-jsconf-cn-starter.git
+```
+
+### 运行docker镜像
+
+进入到项目根目录，运行以下命令：
+
+```shell
+docker run -it -v $(pwd):/app -p 8000:8000 -p 9000:9000 linwang6/gatsby-workshop-jsconf-cn-starter:0.2
+```
+
+### 开发
+
+```shell
+npm run start -- -- --host 0.0.0.0
+```
+
+在docker container的命令行中运行以上命令，之后在浏览器中打开http://localhost:8000/ 就能访问开发中的首页。
+
+### 编译及使用
+
+```shell
+npm run build
+npm run serve -- --host 0.0.0.0
+```
+
+在docker container的命令行中运行以上命令，之后在浏览器中打开http://localhost:9000/ 就能访问编译好的首页。
+
+## 使用codesandbox
+
+访问 [codesandbox](https://codesandbox.io/s/gatsby-workshop-jsconf-cn-starter-7sjt3) ，右上角的fork按钮，就能启动页面的开发。
+
 ## 技术支持&交流
 
 ![image](https://user-images.githubusercontent.com/44826047/66891534-02e7b180-f01c-11e9-998e-10cda70e0ee2.png)
