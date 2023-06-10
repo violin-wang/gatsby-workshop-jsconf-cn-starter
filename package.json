@@ -18,7 +18,7 @@
     "@wework/ray-core": "^1.12.3",
     "@wework/ray-core-react": "^1.12.4",
     "babel-plugin-styled-components": "^1.10.6",
-    "gatsby": "^2.15.21",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^0.8.12",
     "gatsby-image": "^2.2.21",
     "gatsby-plugin-manifest": "^2.2.18",
